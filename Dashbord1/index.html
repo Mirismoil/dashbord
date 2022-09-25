@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
+    "
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Dashbord</title>
+  </head>
+  <body>
+    <!-- Site Header Start  -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner d-flex">
+          <div class="header-inner__left">
+            <a href="#link"> Tickets </a>
+          </div>
+          <div class="header-inner__right d-flex">
+            <input class="search1" type="search" />
+            <a class="inner-right__link" href="#link">
+              <img src="./images/sorch.svg" alt="search" />
+            </a>
+            <a class="inner-right__link" href="#link">
+              <img src="./images/icon2.svg" alt="icon2" />
+            </a>
+            <span class="inner-right__span"></span>
+            <p class="inner-right__text">
+              Jones Ferdinand
+              <img src="./images/personHeader.svg" alt="personHeader" />
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Site Header End  -->
+    <!-- Site Main Start  -->
+    <main class="site-main">
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero">
+            <div class="wrapper">
+              <div>
+                <h2>All tickets</h2>
+              </div>
+              <div class="box-select">
+                <select id="sort" class="select">
+                  <option>Sort qilish</option>
+                  <option value="a-z">A --> Z</option>
+                  <option value="z-a">Z --> A</option>
+                  <option>Asl holat</option>
+                </select>
+                <select class="filtir">
+                  <option>Filtir qilish</option>
+                  <option value="high">High</option>
+                  <option value="normal">Normal</option>
+                  <option value="low">low</option>
+                </select>
+              </div>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="table-header" scope="col">Ticket details</th>
+                  <th class="table-header" scope="col">Customer name</th>
+                  <th class="table-header" scope="col">Date</th>
+                  <th class="table-header" scope="col">Priority</th>
+                  <th class="table-header" scope="col"></th>
+                </tr>
+              </thead>
+              <tbody class="tr__body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/user.js"></script>
+  </body>
+</html>
